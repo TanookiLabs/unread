@@ -147,7 +147,7 @@ module Unread
       end
 
       def read_mark_id_belongs_to?(reader)
-        self.read_mark_reader_id.to_i == reader.id &&
+        self.read_mark_reader_id == reader.id &&
           self.read_mark_reader_type == reader.class.base_class.name
       end
     end

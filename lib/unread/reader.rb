@@ -39,10 +39,10 @@ module Unread
       end
 
       private
-      
+
       def read_mark_id_belongs_to?(readable)
         self.read_mark_readable_type == readable.class.name &&
-        (self.read_mark_readable_id.nil? || self.read_mark_readable_id.to_i == readable.id)
+        (self.read_mark_readable_id.nil? || self.read_mark_readable_id == readable.id)
       end
 
       # We assume that a new reader should not be tackled by tons of old messages created BEFORE he signed up.
