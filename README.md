@@ -3,7 +3,7 @@ Unread
 
 Ruby gem to manage read/unread status of ActiveRecord objects - and it's fast.
 
-[![Build Status](https://travis-ci.org/ledermann/unread.svg?branch=master)](https://travis-ci.org/ledermann/unread)
+[![Build Status](https://github.com/ledermann/unread/workflows/Test/badge.svg?branch=master)](https://github.com/ledermann/unread/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/930c8df0f99b20324444/maintainability)](https://codeclimate.com/github/ledermann/unread/maintainability)
 [![Coverage Status](https://coveralls.io/repos/ledermann/unread/badge.svg?branch=master)](https://coveralls.io/r/ledermann/unread?branch=master)
 
@@ -19,8 +19,8 @@ Ruby gem to manage read/unread status of ActiveRecord objects - and it's fast.
 
 ## Requirements
 
-* Ruby 2.4 or newer
-* Rails 4.0 or newer (including Rails 6)
+* Ruby 3.0 or newer
+* Rails 6.1 or newer (including Rails 7.1)
 * MySQL, PostgreSQL or SQLite
 * Needs a timestamp field in your models (like created_at or updated_at) with a database index on it
 
@@ -223,4 +223,4 @@ AND messages.created_at > '2010-10-20 08:50:00'
 Hint: You should add a database index on `messages.created_at`.
 
 
-Copyright (c) 2010-2019 [Georg Ledermann](http://www.georg-ledermann.de) and [contributors](https://github.com/ledermann/unread/graphs/contributors), released under the MIT license
+Copyright (c) 2010-2023 [Georg Ledermann](https://ledermann.dev) and [contributors](https://github.com/ledermann/unread/graphs/contributors), released under the MIT license

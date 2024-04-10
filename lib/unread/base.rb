@@ -8,7 +8,7 @@ module Unread
       ReadMark.reader_classes ||= []
 
       unless ReadMark.reader_classes.include?(self)
-        ReadMark.belongs_to :reader, polymorphic: true, inverse_of: :read_marks
+        ReadMark.belongs_to :reader, polymorphic: true, inverse_of: :read_marks, optional: true
 
         has_many :read_marks, dependent: :delete_all, as: :reader, inverse_of: :reader
 
